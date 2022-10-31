@@ -122,31 +122,3 @@
     margin-top: 100px;
 }
 
-
-
-/* Переводчик */
-.page_fix {
-    top: 0 !important;
-    position: static !important;
-}
-.skiptranslate {
-    display: none !important;
-}
-.language__img {
-    cursor: pointer;
-}
-.language{
-    position: relative;
-}
-.language::after{
-    content: '';
-    position: absolute;
-    left: 18px;
-    top: 5px;
-    width: 0;
-    height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 7px solid #fff;
-    clear: both;
-}
