@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 .body {
@@ -13,6 +14,10 @@
 }
 .img{
     height: 100%;
+}
+.line{
+    color: #ebebeb;
+    margin: 20px auto;
 }
 .container{
     max-width: 1250px;
@@ -35,7 +40,9 @@
 .header__contaner{
     display: flex;
     gap: 30px;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 .header__logo{
     height: 30px;
@@ -47,7 +54,7 @@
 .header__logo h1{
     text-decoration: none;
 }
-.header__title, .language{
+.header__title{
     position: relative;
     text-transform: uppercase;
     text-decoration: none;
@@ -55,10 +62,20 @@
     font-weight: 500;
     font-size: 15px;
 }
-.companies{
+.header__menu{
+    display: flex;
+    gap: 30px;
+}
+.header__menu a, .header__language{
+    color: #f5f5f7;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+}
+.companies, .brands{
     min-height: 100vh;
 }
-.companies__container{
+.companies__container, .brands__container{
     padding-top: 88px;
 }
 .companies__list{
@@ -70,7 +87,7 @@
 }
 .companies__item{
     background-color: #fff;
-    padding: 16px;
+    padding: 20px;
     border-radius: 16px;
     width: 300px;
     transition: box-shadow 0.4s ease;
@@ -81,21 +98,22 @@
 }
 .company__name{
     text-align: center;
-    color: #1d1d1d;
+    color: #C4C4C6;
     font-size: 17px;
     font-weight: 700;
     line-height: 25px;
 }
 .company__img{
     width: 100%;
+    height: 100px;
     object-fit: scale-down;
-    margin: 50px auto;
+    margin: 30px auto 30px auto;
     align-self: center;
 }
 .h3__title{
     color: #C4C4C6;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
 }
@@ -106,7 +124,7 @@
     gap: 10px;
 }
 .sertificat__item{
-    width: 93px;
+    height: 46px;
     object-fit: scale-down;
 }
 .footer{
@@ -122,3 +140,91 @@
     margin-top: 100px;
 }
 
+
+/* Страница бренды */
+.brands__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.brands__item{
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    padding: 10px;
+    display: block;
+    border-radius: 16px;
+    transition: box-shadow 0.4s ease;
+}
+.brands__item:hover{
+    box-shadow: 0px 3px 7px rgba(148, 148, 148, 0.36);
+}
+.brands__item img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+
+
+.filter{
+    position: relative;
+    width: 300px;
+    height: 70px;
+}
+.filter::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    right: 15px;
+    top: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.3s;
+    pointer-events: none;
+}
+.filter.active::before{
+    top: 16px;
+    transform: rotate(-225deg);
+}
+.filter input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    padding: 12px 20px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+}
+.filter input:hover, .filter.active input{
+    box-shadow: 0px 3px 7px rgba(148, 148, 148, 0.36);
+}
+.filter__options{
+    position: absolute;
+    top: 50px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    display: none;
+    box-shadow: 0px 3px 7px rgba(148, 148, 148, 0.36);
+}
+.filter.active .filter__options{
+    display: block;
+}
+.filter__item{
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.filter__item:hover{
+    background-color: #F2F2F7;
+}

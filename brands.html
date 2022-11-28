@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>UZTS companies</title>
+</head>
+<body class="wrapper body">
+    <header class="header">
+        <div class="header__contaner container">
+            <a href="index.html" class="header__logo">
+                <img src="img/logo.svg" alt="uzts" class="img">
+                <h1 class="header__title">UZTS Brands</h1>
+            </a>
+            <div class="header__menu">
+                <a href="index.html">Компании</a>
+                <a href="brands.html">Бренды</a>
+            </div>
+            <div class="filter header__language">
+                <input type="text" class="filter__title" placeholder="Ru" readonly>
+                <div class="filter__options">
+                    <div class="filter__item" onclick="show('En')"><i class="bi bi-palette-fill"></i>En</div>
+                    <div class="filter__item" onclick="show('Uz')"><i class="bi bi-filetype-html"></i>Uz</div>
+                    <div class="filter__item" onclick="show('Franch')"><i class="bi bi-filetype-css"></i>Franch</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="brands">
+        <div class="brands__container container">
+
+            <div class="filter">
+                <input type="text" class="filter__title" placeholder="Все страны" readonly>
+                <div class="filter__options">
+                    <div class="filter__item" onclick="show('Figma')"><i class="bi bi-palette-fill"></i>Figma</div>
+                    <div class="filter__item" onclick="show('Html')"><i class="bi bi-filetype-html"></i>Html</div>
+                    <div class="filter__item" onclick="show('Css')"><i class="bi bi-filetype-css"></i>Css</div>
+                    <div class="filter__item" onclick="show('JavaScript')"><i class="bi bi-filetype-js"></i>JavaScript</div>
+                </div>
+            </div>
+
+            <div class="brands__list">
+                <a href="#" class="brands__item">
+                    <img src="img/brands/Mango.png" alt="brand__img">
+                </a>
+                <a href="#" class="brands__item">
+                    <img src="img/brands/North-Face.png" alt="brand__img">
+                </a>
+                <a href="#" class="brands__item">
+                    <img src="img/brands/uztexuztex.png" alt="brand__img">
+                </a>
+                <a href="#" class="brands__item">
+                    <img src="img/brands/Gloria-Jeans.png" alt="brand__img">
+                </a>
+                <a href="#" class="brands__item">
+                    <img src="img/brands/Louis-Vuitton.png" alt="brand__img">
+                </a>
+                <a href="#" class="brands__item">
+                    <img src="img/brands/H&M.png" alt="brand__img">
+                </a>
+                <a href="#" class="brands__item">
+                    <img src="img/brands/Nike.png" alt="brand__img">
+                </a>
+                <a href="#" class="brands__item">
+                    <img src="img/brands/Adidas-Logo.png" alt="brand__img">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="https://kingdesignn.ru/" target="_blank" style="color: #fff; text-decoration: none; text-align: center;">Created by KingDesignn</a>
+    </footer>
+
+    <script src="js/scipt.js"></script>
+</body>
+</html>
