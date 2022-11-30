@@ -1,7 +1,3 @@
-function show(anythink){
-    document.querySelector('.filter__title').value = anythink;
-}
-
 if(document.querySelector('.filter')){
     let filter = document.querySelectorAll('.filter');
 
@@ -11,4 +7,3 @@ if(document.querySelector('.filter')){
         }
     });
 }
-    
